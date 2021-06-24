@@ -104,8 +104,6 @@ func dirTree(output io.Writer, path string, isPrintFiles bool) error {
 		return err
 	}
 
-	result = result[:len(result)-1]
-
 	fmt.Fprint(output, result)
 
 	return nil
