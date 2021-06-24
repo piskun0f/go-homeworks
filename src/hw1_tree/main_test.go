@@ -73,3 +73,18 @@ func TestTreeDir(t *testing.T) {
 		t.Errorf("test for OK Failed - results not match\nGot:\n%v\nExpected:\n%v", result, testDirResult)
 	}
 }
+
+// func TestMyTreeDir(t *testing.T) {
+// 	out := new(bytes.Buffer)
+// 	err := dirTree(out, "testdata", false)
+// 	if err != nil {
+// 		t.Errorf("test for OK Failed - error")
+// 	}
+// 	result := out.String()
+// 	if result != testDirResult {
+// 		f, _ := os.Create("tmp")
+// 		defer f.Close()
+// 		f.WriteString(result)
+// 		t.Errorf("test for OK Failed - results not match\nGot:\n%v\nExpected:\n%v", result, testDirResult)
+// 	}
+// }
